@@ -1,0 +1,1021 @@
+creando conexion con pool...
+path value:  /tmp/indy/pool_config_demo.txn
+pool already exist detected!!
+opening pool ledger connection with pool name:  pool_config_demo
+pool handler id:  2
+DID: YTVSBAyjE3ajsCtWQf25hj
+VERKEY: J9QjXwv9ENCJvC4NMQ7MNmKGxATamrScVfF2zT71Bpo1
+DID: Th7MpTaRZVRYnPiabds81Y
+VERKEY: FYmoFw55GeQH7SRFa37dkx1d2dZ3zUF8ckg7wmL7ofN4
+CREANDO SCHEMA EN LOCAL
+Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688
+{ ver: '1.0',
+  id: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+  name: 'Job-Certificate',
+  version: '1.82688',
+  attrNames: 
+   [ 'employee_status',
+     'last_name',
+     'first_name',
+     'experience',
+     'salary' ],
+  seqNo: null }
+REGISTRANDO SCHEMA EN LA RED
+contenido del objeto schema request:
+{
+    "reqId": 1620389082690947800,
+    "identifier": "Th7MpTaRZVRYnPiabds81Y",
+    "operation": {
+        "type": "101",
+        "data": {
+            "name": "Job-Certificate",
+            "version": "1.82688",
+            "attr_names": [
+                "last_name",
+                "salary",
+                "first_name",
+                "employee_status",
+                "experience"
+            ]
+        }
+    },
+    "protocolVersion": 2
+}
+{ result: 
+   { txn: 
+      { metadata: [Object],
+        type: '101',
+        protocolVersion: 2,
+        data: [Object] },
+     rootHash: 'Qit9biqprJNNm98jxsdo4e3kfwauRbCX8qsZuWPsc9Y',
+     auditPath: 
+      [ '5Rbz74yaFKxsfcSDMjQQnM9oqKHweSfgmTJqokKXuP3J',
+        'GR3KUqPq8qvZH16Jhpsdou8KsW579e8T46vhHS4NWUmz',
+        'sZBo1L4QynFSeXXVNgpVkthXxFeJwiEZ6ndcrrWRebp' ],
+     txnMetadata: 
+      { txnId: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+        seqNo: 45,
+        txnTime: 1620389082 },
+     ver: '1',
+     reqSignature: { type: 'ED25519', values: [Array] } },
+  op: 'REPLY' }
+GET SCHEMA
+{ op: 'REPLY',
+  result: 
+   { state_proof: 
+      { root_hash: 'FkF13d6PkeZSYecjPo5sqrujrrXqhSnpE5xZfyovdQDA',
+        proof_nodes: '+QTr+H2DIDg4uHf4dbhzeyJsc24iOjQ1LCJsdXQiOjE2MjAzODkwODIsInZhbCI6eyJhdHRyX25hbWVzIjpbImxhc3RfbmFtZSIsInNhbGFyeSIsImZpcnN0X25hbWUiLCJlbXBsb3llZV9zdGF0dXMiLCJleHBlcmllbmNlIl19feIToK42Y9WjVl8v4eC795ngEb0BdTUjkkSJ5EorbRgdd6K7+FGAgKC6y1hFZtEAG8CczoHEUleblR/4QsMWAqYFCR6jhS1gdaBwcfbUMVp9sPg0DFPPDmLqtgsWtPlGuzEx30Z5IjQHAYCAgICAgICAgICAgID5ATGAoOPLYq4lvUVTbCbmVnYNGm4F8WaRb+CR3/dS8MQbW8B6oIYg1UVFtq4OCY/SkDQUl4FDOnKaVHieiv9ZI+gJqq61oAhNXXSVrCQARS2ISGWJJ6PnXkXt/0gRtRmXIIrI/HHxoJ2hX53QDsgxWOhK8J+zwXjGfz2LWBTN6LRubUPA2ivNoHHNZvXRfn2158UOOiFHcZEjjpRqa8CVP54JqSyXv35PoG8fYZ5fjxcdfrdaAIpSikD/AvtvW9qpwv9YBR/8VLEtoJGoJmt/BusFQDP/9/sRWi9lvg0OCOziD66r4DdCeOvboEuVF9S31sLNSjgvisFNEoZbZHZC4i3wWO35sPtbzP8AoDC6Kh/XJudccgEYaXywicHevyxZZewLgVuRcZPQPDhpgICAgICAgOIToNNF+d5reAAOTzcosebltGJGPTMuzBF1zRKW6TngoOy8+FGAgICAoGRLqxc7f/Yv2YOBZS7vDuy+gS0c3Z2TKbcMrQcEo30kgICAgKCVea2xZlEF1WQlMBskbxjhlJXGtb58Pwug0ZUSTwjqpICAgICAgID2lBOkpvYi1DZXJ0aWZpY2F0ZToxLjoGNrMdc/ffn95XB7+tLNRKkMsG3Me13ddg0wDFNee5D8+FGAgICAgICg+BuZvu6qLQMJ9tzNS3LJeWw7hMaawgDjOD/M4VEH7OqAoPcWSxuH6z3/La+SR3EydHgGmLKJ9ZRjL7HoQt24dgUmgICAgICAgID4cYCAoHpQHPW4g+RxZBYu9lD3RfaOT38lx28DtPVeYsT1l8h0gICgkA1fAQ1VGVJwuEUoWf6rFRQHWGGBZFLN1VvWJyVzZsKAoAfhwW+N8fVfTk8T6Sc5rkSpDVZH6fXUHm9lj2AUVYZvgICAgICAgICA+DmXFoN01wVGFSWlZSWW5QaWFiZHM4MVk6OgPDbTfO6bmffCzwHdpkeQQu5YgsV3DZczs9XzjUfX6bf5ARGg09I/bgmxWmztC58rrZwebgwutUGli7VUyVOFwmuLFqOAgKCamro+9EH/vrNION29c750BMkCYdpXzasRUbZmgA75MICgyvpwHzyde/wiz1Ohl/27w1dCUoTi7l7zvm40SaYssWegRACCCbNLp/Y1alRAAWwlk5HNK8m01axYGilOiw+nIhmAgICAoCRyJt6FDmJQ60JcPeVA5EXTnNrRiLBPYNq9dgI6SYlCgKB9JVxOO1bVJRb8Jwgua4GPO/Juk6XhGUySCneElMV7aqAb0qE5bnVw9F5IUz5uGMXwnAHQmog75MzPMOjuL+f3taA7Ohl8US/Ipw9m90WNb/7n5LAxzanxSmitjBCIzSGcGoA=',
+        multi_signature: [Object] },
+     reqId: 1620389082762703600,
+     dest: 'Th7MpTaRZVRYnPiabds81Y',
+     type: '107',
+     identifier: 'Th7MpTaRZVRYnPiabds81Y',
+     data: 
+      { version: '1.82688',
+        name: 'Job-Certificate',
+        attr_names: [Array] },
+     seqNo: 45,
+     txnTime: 1620389082 } }
+GET SCHEMA PARSED
+[ 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+  { ver: '1.0',
+    id: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+    name: 'Job-Certificate',
+    version: '1.82688',
+    attrNames: 
+     [ 'last_name',
+       'employee_status',
+       'salary',
+       'first_name',
+       'experience' ],
+    seqNo: 45 } ]
+SCHEMA LEIDO DE LA RED
+{ ver: '1.0',
+  id: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+  name: 'Job-Certificate',
+  version: '1.82688',
+  attrNames: 
+   [ 'last_name',
+     'employee_status',
+     'salary',
+     'first_name',
+     'experience' ],
+  seqNo: 45 }
+CREANDO LA CREDENTIAL DEFINITION
+CREDENTIAL DEFINITION CREADA
+Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1
+{ ver: '1.0',
+  id: 'Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1',
+  schemaId: '45',
+  type: 'CL',
+  tag: 'TAG1',
+  value: 
+   { primary: 
+      { n: '83578510026357932151622601172469074117444325957139880310741099387395992763009247285877393398361412043723888356717607578472593926693699113872899311368490186924707365650275754813377671239825497085561895544665553061181485265708818444785240888195138006866926391282671815890222374917612974245452340629984484299401302261596915393053972012868249358878951558621359353390886038008201100623919829958550227106186912991695219705050693016111818329158810303148358494869414023382900085111446343670764532401152256816669652445514882180289619910788138782578970165516715607063005335495986453299840609882519186633172605035449243364771601',
+        s: '9117991383927899686713770042036862225092366251018015541760415567477547897132538339313577827441302632605199447016925414306298934326771191439160426781562408024805310602043647496170806179470171231330204548747080678348603751831224642320238700747880116380819621392195763878647811351454650009185702230959574533862044158237424162336069111537453379274784973305604038013552854952700351889887781213319523714742563093207258887065010242280042059719272917202767737945464944872210176823192733133834749351103615692056032788074902430815468238803520413569583212747853681418450880101356285318644249322199340368342953723724794316201511',
+        r: [Object],
+        rctxt: '14230760302180233165829329564146037582102101993609938494428528385557218516101941492755244167647843743763343446829679031002494351695482320862715696946807726865397348028300265832699553149878639736470282668097200568509177496252766965337600852596099980446616126473151041605151738956815628299559869830574701537029283521730185902895703914203175439463134891952777119755267000367912215316736381787843616365014613446432191307663309063653776949608346003112096212407812918737668122950652110620853030906125643412577645592261574771227162085283665582243986888872398765097968922285638132322054023427456169623619107631252956925246704',
+        z: '56888746739598541019676398681635923012414372829147704115745126901619049181139213529336927487304667261353842344019635163683220492212445729989803896356362771976300099056412857723576687076139046713521143606687504333691574668698686009775476522691415168320773029157852032640174551719390213486944371026524699905059269330966723322638610928824215743486451347099472113444633357378648547491336667548557389975672207411694326220262889383174381712849908244366037245264122792015132338158959858444287114931940162444056579516016178220257018601628779140958769739847775675313437233536397217057509358993376898226551736493859866526291370' } } }
+sending credential definition to ledger
+CREDENTIAL DEFINITION REGISTRATION
+{ op: 'REPLY',
+  result: 
+   { txnMetadata: 
+      { txnTime: 1620389089,
+        seqNo: 46,
+        txnId: 'Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1' },
+     auditPath: 
+      [ '4Se8rTcu3MsHjhBecPujG2paJycTjeMtwst9BYK7Ywzw',
+        '5Rbz74yaFKxsfcSDMjQQnM9oqKHweSfgmTJqokKXuP3J',
+        'GR3KUqPq8qvZH16Jhpsdou8KsW579e8T46vhHS4NWUmz',
+        'sZBo1L4QynFSeXXVNgpVkthXxFeJwiEZ6ndcrrWRebp' ],
+     txn: 
+      { data: [Object],
+        metadata: [Object],
+        type: '102',
+        protocolVersion: 2 },
+     rootHash: '5QRWV9W7CxJvJHi9sHxd5FhiGaeWU4VpWb4LjgjjpCw4',
+     ver: '1',
+     reqSignature: { values: [Array], type: 'ED25519' } } }
+DID: DrXYbqTrsv1iuTv3ZPtGBs
+VERKEY: 81LZsEn2tp64d7Jq9DtS6QX3fMFGxM1s4baMGrb65k2u
+HOLDER DATA
+{ did: 'DrXYbqTrsv1iuTv3ZPtGBs',
+  verkey: '81LZsEn2tp64d7Jq9DtS6QX3fMFGxM1s4baMGrb65k2u',
+  wh: 12 }
+CREANDO LA OFERTA DEL CREDENCIAL PARA EL USUARIO
+OFERTA DE CREDENCIAL CREADA
+{ schema_id: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+  cred_def_id: 'Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1',
+  key_correctness_proof: 
+   { c: '47924138176570215171176296030289075640468224210693088792298804044675239661910',
+     xz_cap: '37841500680223159867832851061530097855410901528138820335161454145652112142118074211634192014294508485825462033034680509051963926399233359510043962341181643876039095171881558362346052308826325807971307305153076087157238715512135402259215910047364326747064159200704037496261694373947903786074604084954276855461380805753945600120709753264896045183051802873303878739218095571049043454683563997083536772309010439487484478718717949682842088067208743993617272264106230695376445304304138117219349953671531225252666832077735674186522750279611284794184553666052078332930501666952633484978413690044357158173850544263321930627038344278755615601413051834260738588667962401509244324420060937463687470348307',
+     xr_cap: [ [Array], [Array], [Array], [Array], [Array], [Array] ] },
+  nonce: '517415374347658389675227' }
+HOLDER: CREANDO MASTER SECRET
+HOLDER: MASTER SECRET ID
+869df1bf-cb76-4b41-9c9e-3466afc3f8d3
+HOLDER: ACEPTANDO LA OFERTA DEL CREDENTIAL Y GENERANDO RESPUESTA
+HOLDER: RESPUESTA A LA OFERTA
+{ prover_did: 'DrXYbqTrsv1iuTv3ZPtGBs',
+  cred_def_id: 'Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1',
+  blinded_ms: 
+   { u: '26015946617385533396644063712107711986348665870156128998857531205917698010297656701255309785777552002694356541266763346459813838456923470539673593341245196476339166349092212280976562943824946972459074882243933969018009537762480044146863215155792461749815160455827630443686110476199906096426322507040783188073467409221440669774599399698546036700084788034920944740187684505296680737002831474851576777077462368988672303144094959673313361351958017048999232425332189885966976623771917069945008842035040182245747155577488487932116354987693903360894188242572690557368271042456619719941560731540846267306470283150286106770102',
+     ur: null,
+     hidden_attributes: [ 'master_secret' ],
+     committed_attributes: {} },
+  blinded_ms_correctness_proof: 
+   { c: '100617135428319041635080923951798328121551557026459477426585481649416860116477',
+     v_dash_cap: '1077971995423453981132068615591346426818379125297149188402044459053645345878382106193840131262895640594553724367425806165050809559760269622816373820325954786598398928710114506889274369738454964475773534693990321660240121884337622654138447901570058092656152835578399704123254265484352742336309397925430201803039861327610699768754184540193004747946469421379322256429202995037129207009135950178826359828938056142360207628020816905863691834699251300961042106815206526894358165130057288237224466673439927413918926150678681939523264109370161154099883715182017189352375126755912335313331301127090739259360454163977092700472122548883755834819397477475992396566597493332176168543761830241243809005185295495746828029934159273086',
+     m_caps: 
+      { master_secret: '1413129575748651077055555630745986976308201678101837298503231976268718097618155795485051275344892530228063479728928807760883073224490808160652265654148747840570497024593890950511' },
+     r_caps: {} },
+  nonce: '39176579186824819022205' }
+HOLDER: RESPUESTA METADATA
+{ master_secret_blinding_data: 
+   { v_prime: '10713602517450074665698464618044217588452744607166191311090989075567172197309686840260627575847702312789606699569742497345678405535347034986428565724080000474409023183566731343827154876283807080040760112674101435422270719664941756459158312996888533332641359543753309867303247937409961322254504334944858582099944598902885320256646399955524207614868830271041452849755628484608707035544628505476270815720365313479874895181681942517428235519534274463677970809762006992736524279056957191093790324102765322600597714446926858251699026472129138847967950634502004584121315077924610653779968826568978075377315273746454562921681316271161577377330120385',
+     vr_prime: null },
+  nonce: '39176579186824819022205',
+  master_secret_name: '869df1bf-cb76-4b41-9c9e-3466afc3f8d3' }
+ISSUER: CREANDO CREDENCIAL CON LOS DATOS
+{
+    "first_name": {
+        "raw": "Jhon",
+        "encoded": "1248358254"
+    },
+    "last_name": {
+        "raw": "Doe",
+        "encoded": "4484965"
+    },
+    "salary": {
+        "raw": "20000",
+        "encoded": "20000"
+    },
+    "employee_status": {
+        "raw": "hired",
+        "encoded": "448445703524"
+    },
+    "experience": {
+        "raw": "2",
+        "encoded": "2"
+    }
+}
+ISSUER: CREDENCIAL CREADO
+{"schema_id":"Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688","cred_def_id":"Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1","rev_reg_id":null,"values":{"first_name":{"raw":"Jhon","encoded":"1248358254"},"employee_status":{"raw":"hired","encoded":"448445703524"},"salary":{"raw":"20000","encoded":"20000"},"experience":{"raw":"2","encoded":"2"},"last_name":{"raw":"Doe","encoded":"4484965"}},"signature":{"p_credential":{"m_2":"101975167901379157040246651842462190528991203400294403587177169787443256979015","a":"10209209787774413281863726877120615796483303476470982329021690377368656906742391030426505750913725530504373174545988116307742829507000485584148381184174338351181244554762132179263704544906879893515527368745514999219306815739997008105425230016485235743371427270984987402804416299021415302799067103327320518605937933922882422411549845201742170445602214557720278374540530709390322516675400602531114272574874839241534725418023718279390263847311649968150638229399897396682281706111522600185249209508506432138746549305621202891999868619288681856162759956239993370189107160137841358524848588729672891878571698434971900202543","e":"259344723055062059907025491480697571938277889515152306249728583105665800713306759149981690559193987143012367913206299323899696942213235956742929877945320299796526880554104453026421","v":"7391268965862243478134228835243527975670678570923034431713142412670240484361122377785100781527372921135450177451264494182359716474301295132048263000991108304322235010588075879165918538070810249761325779569539315244932547502155637819310173585577669121307483421667876472540623930797200981055059859838580913421964093873178559836115753427675089151482059267209629512626951913310091430410179605899619885177655960962165742317085422076296062395354111015339966386750709762607889243246493267332001891408548580250112989463126658464047069222087253017632444678632693358689716802292054449060618125204009232880813498757015852403675771501378408785206615359262048470800464468700764630244272330956901253663107208323298692871403107120831056125230589528450106584466185385516094762639744092742059514207356537754747798709474989899977546736392"},"r_credential":null},"signature_correctness_proof":{"se":"15089282159489027595042560329620485258266844830686151840084497316906356185929999788512048468947872492259365359862885517030389542433040210385289977604336229487702258463396523224916840001436556816947613085523449027557831978290848074883770683977094672670298762947730682569407875737607517841667825747975418749554599816784420276375905855876342781442275712649846477818079097851217275146747777516539617057911510961906368870175835743864423511384199368328324651031237102518320534388951934109463439983867570548715749404658987887975396000982894643744784443298086737609527268508474582616172345038333924688292215366144997381622269","c":"89275491671554042746888355177669433597968225466004757630614392278588128000574"},"rev_reg":null,"witness":null}
+HOLDER: GUARDANDO CREDENCIAL EN WALLET
+HOLDER: CREDENCIAL GUARDADO CON EL ID
+66a074cc-3ce1-486f-9dc9-36870961829d
+DID: VZHnkYUiZPQ7sQJs8iKhP
+VERKEY: GZjaMbBH5oDfKj9winudY2ihzQENvv84NmwhAmpW4yd
+USER VERIFIER DATA
+{ did: 'VZHnkYUiZPQ7sQJs8iKhP',
+  verkey: 'GZjaMbBH5oDfKj9winudY2ihzQENvv84NmwhAmpW4yd',
+  wh: 14 }
+VERIFIER: DATOS DEL PROOF REQUEST
+{
+    "nonce": "1032135347544982046629568",
+    "name": "Proof-Request",
+    "version": "0.2",
+    "ver": "1.0",
+    "requested_attributes": {
+        "attr1_referent": {
+            "name": "first_name",
+            "restrictions": [
+                {
+                    "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1"
+                }
+            ]
+        },
+        "attr2_referent": {
+            "name": "last_name",
+            "restrictions": [
+                {
+                    "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1"
+                }
+            ]
+        }
+    },
+    "requested_predicates": {}
+}
+HOLDER: BUSCANDO EN LA WALLET CREDENCIALES QUE PRUEBEN LA SOLICITUD RECIBIDA
+HOLDER: OBTENIENDO HANDLER DE BUSQUEDA
+HOLDER: BUSCANDO CREDENCIALES EN LA WALLET:  15 12
+HOLDER: CREDENCIALES COINCIDENTES ENCONTRADOS
+[
+    {
+        "cred_info": {
+            "referent": "66a074cc-3ce1-486f-9dc9-36870961829d",
+            "attrs": {
+                "first_name": "Jhon",
+                "employee_status": "hired",
+                "salary": "20000",
+                "last_name": "Doe",
+                "experience": "2"
+            },
+            "schema_id": "Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688",
+            "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1",
+            "rev_reg_id": null,
+            "cred_rev_id": null
+        },
+        "interval": null
+    }
+]
+HOLDER: OBTENIENDO DE LA RED LOS DATOS ADICIONALES: SCHEMA, CREDENTIAL DEFINITION
+{
+    "66a074cc-3ce1-486f-9dc9-36870961829d": {
+        "referent": "66a074cc-3ce1-486f-9dc9-36870961829d",
+        "attrs": {
+            "first_name": "Jhon",
+            "employee_status": "hired",
+            "salary": "20000",
+            "last_name": "Doe",
+            "experience": "2"
+        },
+        "schema_id": "Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688",
+        "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1",
+        "rev_reg_id": null,
+        "cred_rev_id": null
+    }
+}
+"HOLDER" -> Get Schema from Ledger
+GET SCHEMA
+{ result: 
+   { data: 
+      { version: '1.82688',
+        name: 'Job-Certificate',
+        attr_names: [Array] },
+     state_proof: 
+      { multi_signature: [Object],
+        root_hash: 'DxVHfnFvvSjMyJytW8LYiUihXTqrFcyNHm5ykJZyaui8',
+        proof_nodes: '+QTr+HGAgKB6UBz1uIPkcWQWLvZQ90X2jk9/JcdvA7T1XmLE9ZfIdICAoJANXwENVRlScLhFKFn+qxUUB1hhgWRSzdVb1iclc2bCgKAH4cFvjfH1X05PE+knOa5EqQ1WR+n11B5vZY9gFFWGb4CAgICAgICAgOIToK42Y9WjVl8v4eC795ngEb0BdTUjkkSJ5EorbRgdd6K7+FGAgKC6y1hFZtEAG8CczoHEUleblR/4QsMWAqYFCR6jhS1gdaCoxnqEUYqdXOQNWBcx6UzXS6sChDMakAADTcE+Wndr34CAgICAgICAgICAgID4fYMgODi4d/h1uHN7ImxzbiI6NDUsImx1dCI6MTYyMDM4OTA4MiwidmFsIjp7ImF0dHJfbmFtZXMiOlsibGFzdF9uYW1lIiwic2FsYXJ5IiwiZmlyc3RfbmFtZSIsImVtcGxveWVlX3N0YXR1cyIsImV4cGVyaWVuY2UiXX19+QExgKDjy2KuJb1FU2wm5lZ2DRpuBfFmkW/gkd/3UvDEG1vAeqCGINVFRbauDgmP0pA0FJeBQzpymlR4nor/WSPoCaqutaAITV10lawkAEUtiEhliSej515F7f9IEbUZlyCKyPxx8aCdoV+d0A7IMVjoSvCfs8F4xn89i1gUzei0bm1DwNorzaBxzWb10X59tefFDjohR3GRI46UamvAlT+eCaksl79+T6BvH2GeX48XHX63WgCKUopA/wL7b1vaqcL/WAUf/FSxLaCRqCZrfwbrBUAz//f7EVovZb4NDgjs4g+uq+A3Qnjr26BLlRfUt9bCzUo4L4rBTRKGW2R2QuIt8Fjt+bD7W8z/AKAwuiof1ybnXHIBGGl8sInB3r8sWWXsC4FbkXGT0Dw4aYCAgICAgIDiE6DTRfnea3gADk83KLHm5bRiRj0zLswRdc0Sluk54KDsvPhRgICAgICAoPgbmb7uqi0DCfbczUtyyXlsO4TGmsIA4zg/zOFRB+zqgKD3Fksbh+s9/y2vkkdxMnR4BpiyifWUYy+x6ELduHYFJoCAgICAgICA+DmXFoN01wVGFSWlZSWW5QaWFiZHM4MVk6OgGWmQVTb9CfXVRdYAJL1umfBHdKUfFzokw+t7CcDz1yP4UYCAgICgfENat87bhz7EzPP6d2Zv/2ZIEI1wGGz8u3EisSN9EraAgICAoJV5rbFmUQXVZCUwGyRvGOGUlca1vnw/C6DRlRJPCOqkgICAgICAgPaUE6Sm9iLUNlcnRpZmljYXRlOjEuOgY2sx1z99+f3lcHv60s1EqQywbcx7Xd12DTAMU157kPz5ARGg09I/bgmxWmztC58rrZwebgwutUGli7VUyVOFwmuLFqOAgKCamro+9EH/vrNION29c750BMkCYdpXzasRUbZmgA75MICg7D1nwJS3LiRrI9P3M2R5Z8+ZSDgRB4oou2H4A4lwACqgRACCCbNLp/Y1alRAAWwlk5HNK8m01axYGilOiw+nIhmAgICAoCRyJt6FDmJQ60JcPeVA5EXTnNrRiLBPYNq9dgI6SYlCgKB9JVxOO1bVJRb8Jwgua4GPO/Juk6XhGUySCneElMV7aqAb0qE5bnVw9F5IUz5uGMXwnAHQmog75MzPMOjuL+f3taA7Ohl8US/Ipw9m90WNb/7n5LAxzanxSmitjBCIzSGcGoA=' },
+     seqNo: 45,
+     txnTime: 1620389082,
+     type: '107',
+     reqId: 1620389092398287600,
+     identifier: 'DrXYbqTrsv1iuTv3ZPtGBs',
+     dest: 'Th7MpTaRZVRYnPiabds81Y' },
+  op: 'REPLY' }
+GET SCHEMA PARSED
+[ 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+  { ver: '1.0',
+    id: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+    name: 'Job-Certificate',
+    version: '1.82688',
+    attrNames: 
+     [ 'first_name',
+       'experience',
+       'employee_status',
+       'last_name',
+       'salary' ],
+    seqNo: 45 } ]
+"HOLDER" -> Get Claim Definition from Ledger
+HOLDER: CONSTRUYENDO PRUEBA A PARTIR DE
+{
+    "self_attested_attributes": {},
+    "requested_attributes": {
+        "attr1_referent": {
+            "cred_id": "66a074cc-3ce1-486f-9dc9-36870961829d",
+            "revealed": true
+        },
+        "attr2_referent": {
+            "cred_id": "66a074cc-3ce1-486f-9dc9-36870961829d",
+            "revealed": true
+        }
+    },
+    "requested_predicates": {}
+}
+HOLDER: PRUEBA GENERADA
+{
+    "proof": {
+        "proofs": [
+            {
+                "primary_proof": {
+                    "eq_proof": {
+                        "revealed_attrs": {
+                            "first_name": "1248358254",
+                            "last_name": "4484965"
+                        },
+                        "a_prime": "10691833645932555139371075082666035491129262499349457156326156228181063542649439905128250142994842322558881765393046785223439066661910497179758688485805937814868513612976134977476075880838088907995971561094640797142253802459412574871287408571036584925373595212164742187948377186515717642574004357781998479301885105719068877489160287095366250063840898046753308002597640749250607471459939535542588570092660436240290044141490570291273944085728229517906949860643317789354285885702822903614853233508181058561200590942085902610029350620918204358086607300237422101759950299015475740171369889553307141782906918208233075374091",
+                        "e": "171449046024208709016197174077501608735810915278342474899188540759537918283544893047358403332184047431799133299515033354475245225197901879",
+                        "v": "324656315590579834207978298044698278799355139220445912048481478587511038735899406451190497646318975259481597800189864230849410275989914064492707227007682331453203591912675644249842132801734997901970454449795742766628070742133460401238876123060335099343163289033457821048640166928555015541856532623391852819196258064814814140589971199789032324624598659002626728029934692021634800063456580655752493203734106419493717426877727185139056278004795716022868240615843201379944651108969521181456878206328036214906087883160532600192790000531668419843875171187147643238559781354762014415869476878915657754325065374682342433956668758345913691046223109855836408159270102911392121616401014494426272921867668685759881748169394858810344410752642988359047095913483038229914425357599943869004287620098995016177808736451709504671714842599517689981501073993384825695615383388727841925933330974728503290711889356309458803654893468049512019422",
+                        "m": {
+                            "experience": "15765519485287869021388684660750590352611133987430841791928195541151031425615236510004642735020988536434241136712696483544571739117455390242340751873001335332952443040226629748782",
+                            "salary": "4118033347728507414559749757702558578706800934037890232179572512243033408910790902920806887164825094451692900322704771594764730197454700651408270296510674551949264403429281581105",
+                            "master_secret": "1386479698362057681440734007275561157151312221354195402489899183028308886041498119823108531340028938036610443656224463526724797701057102779771720977418684509691686879348767748456",
+                            "employee_status": "5055657203707979726889671973852699269339359190108520507932165029531480245763708228523483431246115398464425514833815505824600463619296748334841638789533033730011643665354426280662"
+                        },
+                        "m2": "12045871496062400811386774378041705667505198854504362580363794948428410212402117617593350147980826862450253101793849956194158564246600810250605849363713306269715119101764574917754"
+                    },
+                    "ge_proofs": []
+                },
+                "non_revoc_proof": null
+            }
+        ],
+        "aggregated_proof": {
+            "c_hash": "40235583978761542575461941538463061857425155512491624984551949125626810960795",
+            "c_list": [
+                [
+                    84,
+                    178,
+                    21,
+                    67,
+                    71,
+                    208,
+                    225,
+                    188,
+                    206,
+                    247,
+                    232,
+                    100,
+                    4,
+                    126,
+                    5,
+                    214,
+                    176,
+                    141,
+                    65,
+                    111,
+                    21,
+                    253,
+                    39,
+                    233,
+                    106,
+                    242,
+                    156,
+                    42,
+                    61,
+                    141,
+                    227,
+                    75,
+                    126,
+                    62,
+                    69,
+                    234,
+                    120,
+                    54,
+                    135,
+                    76,
+                    121,
+                    36,
+                    87,
+                    212,
+                    201,
+                    32,
+                    140,
+                    176,
+                    21,
+                    242,
+                    53,
+                    30,
+                    253,
+                    43,
+                    37,
+                    121,
+                    90,
+                    89,
+                    197,
+                    57,
+                    17,
+                    60,
+                    15,
+                    23,
+                    40,
+                    136,
+                    154,
+                    101,
+                    161,
+                    150,
+                    27,
+                    56,
+                    50,
+                    21,
+                    36,
+                    59,
+                    24,
+                    17,
+                    247,
+                    86,
+                    174,
+                    17,
+                    21,
+                    219,
+                    190,
+                    229,
+                    182,
+                    89,
+                    226,
+                    3,
+                    19,
+                    239,
+                    208,
+                    35,
+                    132,
+                    136,
+                    43,
+                    14,
+                    212,
+                    100,
+                    158,
+                    39,
+                    73,
+                    40,
+                    72,
+                    92,
+                    199,
+                    31,
+                    128,
+                    129,
+                    232,
+                    9,
+                    244,
+                    104,
+                    201,
+                    166,
+                    154,
+                    3,
+                    93,
+                    155,
+                    236,
+                    179,
+                    89,
+                    189,
+                    186,
+                    112,
+                    45,
+                    44,
+                    167,
+                    35,
+                    191,
+                    106,
+                    240,
+                    195,
+                    177,
+                    124,
+                    252,
+                    179,
+                    250,
+                    5,
+                    203,
+                    229,
+                    221,
+                    3,
+                    157,
+                    17,
+                    66,
+                    9,
+                    12,
+                    115,
+                    134,
+                    77,
+                    201,
+                    146,
+                    19,
+                    187,
+                    94,
+                    21,
+                    161,
+                    112,
+                    14,
+                    10,
+                    220,
+                    197,
+                    121,
+                    37,
+                    108,
+                    162,
+                    51,
+                    49,
+                    215,
+                    99,
+                    33,
+                    48,
+                    191,
+                    129,
+                    155,
+                    160,
+                    101,
+                    27,
+                    232,
+                    221,
+                    228,
+                    240,
+                    234,
+                    141,
+                    48,
+                    133,
+                    225,
+                    29,
+                    94,
+                    211,
+                    79,
+                    49,
+                    38,
+                    172,
+                    212,
+                    64,
+                    25,
+                    1,
+                    81,
+                    158,
+                    241,
+                    255,
+                    174,
+                    124,
+                    189,
+                    168,
+                    172,
+                    110,
+                    181,
+                    97,
+                    160,
+                    190,
+                    130,
+                    109,
+                    126,
+                    3,
+                    55,
+                    253,
+                    207,
+                    83,
+                    229,
+                    21,
+                    94,
+                    145,
+                    63,
+                    195,
+                    206,
+                    83,
+                    152,
+                    135,
+                    207,
+                    165,
+                    6,
+                    62,
+                    232,
+                    162,
+                    131,
+                    44,
+                    151,
+                    2,
+                    19,
+                    212,
+                    203,
+                    101,
+                    231,
+                    84,
+                    168,
+                    31,
+                    69,
+                    252,
+                    131,
+                    243,
+                    248,
+                    11
+                ]
+            ]
+        }
+    },
+    "requested_proof": {
+        "revealed_attrs": {
+            "attr1_referent": {
+                "sub_proof_index": 0,
+                "raw": "Jhon",
+                "encoded": "1248358254"
+            },
+            "attr2_referent": {
+                "sub_proof_index": 0,
+                "raw": "Doe",
+                "encoded": "4484965"
+            }
+        },
+        "self_attested_attrs": {},
+        "unrevealed_attrs": {},
+        "predicates": {}
+    },
+    "identifiers": [
+        {
+            "schema_id": "Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688",
+            "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1",
+            "rev_reg_id": null,
+            "timestamp": null
+        }
+    ]
+}
+HOLDER: PRUEBA CREADA
+{
+    "proof": {
+        "proofs": [
+            {
+                "primary_proof": {
+                    "eq_proof": {
+                        "revealed_attrs": {
+                            "first_name": "1248358254",
+                            "last_name": "4484965"
+                        },
+                        "a_prime": "10691833645932555139371075082666035491129262499349457156326156228181063542649439905128250142994842322558881765393046785223439066661910497179758688485805937814868513612976134977476075880838088907995971561094640797142253802459412574871287408571036584925373595212164742187948377186515717642574004357781998479301885105719068877489160287095366250063840898046753308002597640749250607471459939535542588570092660436240290044141490570291273944085728229517906949860643317789354285885702822903614853233508181058561200590942085902610029350620918204358086607300237422101759950299015475740171369889553307141782906918208233075374091",
+                        "e": "171449046024208709016197174077501608735810915278342474899188540759537918283544893047358403332184047431799133299515033354475245225197901879",
+                        "v": "324656315590579834207978298044698278799355139220445912048481478587511038735899406451190497646318975259481597800189864230849410275989914064492707227007682331453203591912675644249842132801734997901970454449795742766628070742133460401238876123060335099343163289033457821048640166928555015541856532623391852819196258064814814140589971199789032324624598659002626728029934692021634800063456580655752493203734106419493717426877727185139056278004795716022868240615843201379944651108969521181456878206328036214906087883160532600192790000531668419843875171187147643238559781354762014415869476878915657754325065374682342433956668758345913691046223109855836408159270102911392121616401014494426272921867668685759881748169394858810344410752642988359047095913483038229914425357599943869004287620098995016177808736451709504671714842599517689981501073993384825695615383388727841925933330974728503290711889356309458803654893468049512019422",
+                        "m": {
+                            "experience": "15765519485287869021388684660750590352611133987430841791928195541151031425615236510004642735020988536434241136712696483544571739117455390242340751873001335332952443040226629748782",
+                            "salary": "4118033347728507414559749757702558578706800934037890232179572512243033408910790902920806887164825094451692900322704771594764730197454700651408270296510674551949264403429281581105",
+                            "master_secret": "1386479698362057681440734007275561157151312221354195402489899183028308886041498119823108531340028938036610443656224463526724797701057102779771720977418684509691686879348767748456",
+                            "employee_status": "5055657203707979726889671973852699269339359190108520507932165029531480245763708228523483431246115398464425514833815505824600463619296748334841638789533033730011643665354426280662"
+                        },
+                        "m2": "12045871496062400811386774378041705667505198854504362580363794948428410212402117617593350147980826862450253101793849956194158564246600810250605849363713306269715119101764574917754"
+                    },
+                    "ge_proofs": []
+                },
+                "non_revoc_proof": null
+            }
+        ],
+        "aggregated_proof": {
+            "c_hash": "40235583978761542575461941538463061857425155512491624984551949125626810960795",
+            "c_list": [
+                [
+                    84,
+                    178,
+                    21,
+                    67,
+                    71,
+                    208,
+                    225,
+                    188,
+                    206,
+                    247,
+                    232,
+                    100,
+                    4,
+                    126,
+                    5,
+                    214,
+                    176,
+                    141,
+                    65,
+                    111,
+                    21,
+                    253,
+                    39,
+                    233,
+                    106,
+                    242,
+                    156,
+                    42,
+                    61,
+                    141,
+                    227,
+                    75,
+                    126,
+                    62,
+                    69,
+                    234,
+                    120,
+                    54,
+                    135,
+                    76,
+                    121,
+                    36,
+                    87,
+                    212,
+                    201,
+                    32,
+                    140,
+                    176,
+                    21,
+                    242,
+                    53,
+                    30,
+                    253,
+                    43,
+                    37,
+                    121,
+                    90,
+                    89,
+                    197,
+                    57,
+                    17,
+                    60,
+                    15,
+                    23,
+                    40,
+                    136,
+                    154,
+                    101,
+                    161,
+                    150,
+                    27,
+                    56,
+                    50,
+                    21,
+                    36,
+                    59,
+                    24,
+                    17,
+                    247,
+                    86,
+                    174,
+                    17,
+                    21,
+                    219,
+                    190,
+                    229,
+                    182,
+                    89,
+                    226,
+                    3,
+                    19,
+                    239,
+                    208,
+                    35,
+                    132,
+                    136,
+                    43,
+                    14,
+                    212,
+                    100,
+                    158,
+                    39,
+                    73,
+                    40,
+                    72,
+                    92,
+                    199,
+                    31,
+                    128,
+                    129,
+                    232,
+                    9,
+                    244,
+                    104,
+                    201,
+                    166,
+                    154,
+                    3,
+                    93,
+                    155,
+                    236,
+                    179,
+                    89,
+                    189,
+                    186,
+                    112,
+                    45,
+                    44,
+                    167,
+                    35,
+                    191,
+                    106,
+                    240,
+                    195,
+                    177,
+                    124,
+                    252,
+                    179,
+                    250,
+                    5,
+                    203,
+                    229,
+                    221,
+                    3,
+                    157,
+                    17,
+                    66,
+                    9,
+                    12,
+                    115,
+                    134,
+                    77,
+                    201,
+                    146,
+                    19,
+                    187,
+                    94,
+                    21,
+                    161,
+                    112,
+                    14,
+                    10,
+                    220,
+                    197,
+                    121,
+                    37,
+                    108,
+                    162,
+                    51,
+                    49,
+                    215,
+                    99,
+                    33,
+                    48,
+                    191,
+                    129,
+                    155,
+                    160,
+                    101,
+                    27,
+                    232,
+                    221,
+                    228,
+                    240,
+                    234,
+                    141,
+                    48,
+                    133,
+                    225,
+                    29,
+                    94,
+                    211,
+                    79,
+                    49,
+                    38,
+                    172,
+                    212,
+                    64,
+                    25,
+                    1,
+                    81,
+                    158,
+                    241,
+                    255,
+                    174,
+                    124,
+                    189,
+                    168,
+                    172,
+                    110,
+                    181,
+                    97,
+                    160,
+                    190,
+                    130,
+                    109,
+                    126,
+                    3,
+                    55,
+                    253,
+                    207,
+                    83,
+                    229,
+                    21,
+                    94,
+                    145,
+                    63,
+                    195,
+                    206,
+                    83,
+                    152,
+                    135,
+                    207,
+                    165,
+                    6,
+                    62,
+                    232,
+                    162,
+                    131,
+                    44,
+                    151,
+                    2,
+                    19,
+                    212,
+                    203,
+                    101,
+                    231,
+                    84,
+                    168,
+                    31,
+                    69,
+                    252,
+                    131,
+                    243,
+                    248,
+                    11
+                ]
+            ]
+        }
+    },
+    "requested_proof": {
+        "revealed_attrs": {
+            "attr1_referent": {
+                "sub_proof_index": 0,
+                "raw": "Jhon",
+                "encoded": "1248358254"
+            },
+            "attr2_referent": {
+                "sub_proof_index": 0,
+                "raw": "Doe",
+                "encoded": "4484965"
+            }
+        },
+        "self_attested_attrs": {},
+        "unrevealed_attrs": {},
+        "predicates": {}
+    },
+    "identifiers": [
+        {
+            "schema_id": "Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688",
+            "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1",
+            "rev_reg_id": null,
+            "timestamp": null
+        }
+    ]
+}
+VERIFIER: CONTENIDO VISIBLE DE LA PRUEBA
+{
+    "revealed_attrs": {
+        "attr1_referent": {
+            "sub_proof_index": 0,
+            "raw": "Jhon",
+            "encoded": "1248358254"
+        },
+        "attr2_referent": {
+            "sub_proof_index": 0,
+            "raw": "Doe",
+            "encoded": "4484965"
+        }
+    },
+    "self_attested_attrs": {},
+    "unrevealed_attrs": {},
+    "predicates": {}
+}
+VERIFIER: OBTENIENDO INFORMACION ADICIONAL DE LA RED ANTES DE VERIFICAR PRUEBA
+[
+    {
+        "schema_id": "Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688",
+        "cred_def_id": "Th7MpTaRZVRYnPiabds81Y:3:CL:45:TAG1",
+        "rev_reg_id": null,
+        "timestamp": null
+    }
+]
+"VERIFIER" -> Get Schema from Ledger
+GET SCHEMA
+{ result: 
+   { data: 
+      { version: '1.82688',
+        name: 'Job-Certificate',
+        attr_names: [Array] },
+     state_proof: 
+      { multi_signature: [Object],
+        root_hash: 'DxVHfnFvvSjMyJytW8LYiUihXTqrFcyNHm5ykJZyaui8',
+        proof_nodes: '+QTr+HGAgKB6UBz1uIPkcWQWLvZQ90X2jk9/JcdvA7T1XmLE9ZfIdICAoJANXwENVRlScLhFKFn+qxUUB1hhgWRSzdVb1iclc2bCgKAH4cFvjfH1X05PE+knOa5EqQ1WR+n11B5vZY9gFFWGb4CAgICAgICAgOIToK42Y9WjVl8v4eC795ngEb0BdTUjkkSJ5EorbRgdd6K7+FGAgKC6y1hFZtEAG8CczoHEUleblR/4QsMWAqYFCR6jhS1gdaCoxnqEUYqdXOQNWBcx6UzXS6sChDMakAADTcE+Wndr34CAgICAgICAgICAgID4fYMgODi4d/h1uHN7ImxzbiI6NDUsImx1dCI6MTYyMDM4OTA4MiwidmFsIjp7ImF0dHJfbmFtZXMiOlsibGFzdF9uYW1lIiwic2FsYXJ5IiwiZmlyc3RfbmFtZSIsImVtcGxveWVlX3N0YXR1cyIsImV4cGVyaWVuY2UiXX19+QExgKDjy2KuJb1FU2wm5lZ2DRpuBfFmkW/gkd/3UvDEG1vAeqCGINVFRbauDgmP0pA0FJeBQzpymlR4nor/WSPoCaqutaAITV10lawkAEUtiEhliSej515F7f9IEbUZlyCKyPxx8aCdoV+d0A7IMVjoSvCfs8F4xn89i1gUzei0bm1DwNorzaBxzWb10X59tefFDjohR3GRI46UamvAlT+eCaksl79+T6BvH2GeX48XHX63WgCKUopA/wL7b1vaqcL/WAUf/FSxLaCRqCZrfwbrBUAz//f7EVovZb4NDgjs4g+uq+A3Qnjr26BLlRfUt9bCzUo4L4rBTRKGW2R2QuIt8Fjt+bD7W8z/AKAwuiof1ybnXHIBGGl8sInB3r8sWWXsC4FbkXGT0Dw4aYCAgICAgIDiE6DTRfnea3gADk83KLHm5bRiRj0zLswRdc0Sluk54KDsvPhRgICAgICAoPgbmb7uqi0DCfbczUtyyXlsO4TGmsIA4zg/zOFRB+zqgKD3Fksbh+s9/y2vkkdxMnR4BpiyifWUYy+x6ELduHYFJoCAgICAgICA+DmXFoN01wVGFSWlZSWW5QaWFiZHM4MVk6OgGWmQVTb9CfXVRdYAJL1umfBHdKUfFzokw+t7CcDz1yP4UYCAgICgfENat87bhz7EzPP6d2Zv/2ZIEI1wGGz8u3EisSN9EraAgICAoJV5rbFmUQXVZCUwGyRvGOGUlca1vnw/C6DRlRJPCOqkgICAgICAgPaUE6Sm9iLUNlcnRpZmljYXRlOjEuOgY2sx1z99+f3lcHv60s1EqQywbcx7Xd12DTAMU157kPz5ARGg09I/bgmxWmztC58rrZwebgwutUGli7VUyVOFwmuLFqOAgKCamro+9EH/vrNION29c750BMkCYdpXzasRUbZmgA75MICg7D1nwJS3LiRrI9P3M2R5Z8+ZSDgRB4oou2H4A4lwACqgRACCCbNLp/Y1alRAAWwlk5HNK8m01axYGilOiw+nIhmAgICAoCRyJt6FDmJQ60JcPeVA5EXTnNrRiLBPYNq9dgI6SYlCgKB9JVxOO1bVJRb8Jwgua4GPO/Juk6XhGUySCneElMV7aqAb0qE5bnVw9F5IUz5uGMXwnAHQmog75MzPMOjuL+f3taA7Ohl8US/Ipw9m90WNb/7n5LAxzanxSmitjBCIzSGcGoA=' },
+     seqNo: 45,
+     txnTime: 1620389082,
+     type: '107',
+     reqId: 1620389092434723800,
+     identifier: 'VZHnkYUiZPQ7sQJs8iKhP',
+     dest: 'Th7MpTaRZVRYnPiabds81Y' },
+  op: 'REPLY' }
+GET SCHEMA PARSED
+[ 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+  { ver: '1.0',
+    id: 'Th7MpTaRZVRYnPiabds81Y:2:Job-Certificate:1.82688',
+    name: 'Job-Certificate',
+    version: '1.82688',
+    attrNames: 
+     [ 'experience',
+       'first_name',
+       'employee_status',
+       'last_name',
+       'salary' ],
+    seqNo: 45 } ]
+"VERIFIER" -> Get Claim Definition from Ledger
+VERIFIER: PRUEBA VERIFICADA?
+true
