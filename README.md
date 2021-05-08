@@ -11,7 +11,7 @@
 
 # EHU/UPV Hyperledger Indy
 
-> This repository contains the reources used as part of Hyperledger Programming Course that was part of the EHU/UPV Master called "Máster Propio en Tecnología Blockchain y Criptoeconomía"
+> This repository contains the resources used as part of Hyperledger Programming Course that was part of the EHU/UPV Master called "Máster Propio en Tecnología Blockchain y Criptoeconomía"
 
 ## Máster Propio en Tecnología Blockchain y Criptoeconomía de la Universidad del País Vasco - EHU/UPV
 
